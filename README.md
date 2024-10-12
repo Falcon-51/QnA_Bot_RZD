@@ -51,3 +51,20 @@
 * FastAPI
 * PostgreSQL
 * JavaScript
+
+## Использование
+1) Клонировать репозиторий;
+2) В скриптах директории NLP заменить пути до моделей (найти на HuggingFace пути для загрузки);
+3) Поднять WebApp с директории back;
+4) Запустить скрипт inference.py с параметром share=True (для ссылки Gradio);
+5) Поместить ссылку в теге iframe в back/templates/chat.html.
+
+## UI:
+### Главная страница:
+![image](https://github.com/user-attachments/assets/52106d84-134f-4419-80e7-cad95a3c4fd5)
+### Чат:
+![image](https://github.com/user-attachments/assets/828e246e-1c5c-43e3-b8ef-3c183d97e774)
+### Документы:
+![image](https://github.com/user-attachments/assets/0a30e2d4-1ff6-4ae8-b739-32ee2cfc41fc)
+
+
