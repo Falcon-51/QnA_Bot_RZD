@@ -21,8 +21,8 @@ CLEAR_BTN_NAME = 'Очистить весь чат'
 QUESTION_FIELD_PLACEHOLDER = "Какой у вас вопрос?"
 SUBMIT_BTN = 'Отправить'
 BOT_AVATAR, USER_AVATAR = [
-    '/home/user1/QnA_rzd/NLP/data/bot_avatar.jpg',
-    '/home/user1/QnA_rzd/NLP/data/user_avatar.png']
+    '/home/user1/QnA_Bot_RZD/NLP/data/bot_avatar.jpg',
+    '/home/user1/QnA_Bot_RZD/NLP/data/user_avatar.png']
 
 
 
@@ -43,7 +43,7 @@ class QnA:
     Класс для инференса чат-бота
     """
 
-    def __init__(self, pdf_path:str="/home/user1/QnA_rzd/Documents/base/", faiss_path:str="/home/user1/QnA_rzd/NLP/faiss_index.index", load_faiss:bool=True):
+    def __init__(self, pdf_path:str="/home/user1/QnA_Bot_RZD/Documents/base/", faiss_path:str="/home/user1/QnA_Bot_RZD/NLP/faiss_index.index", load_faiss:bool=True):
 
         """
         Конструктор класса чат-бота

@@ -21,7 +21,7 @@ class Retriever:
         self.texts = []
         self.filenames = []
         self.device = "cuda" if torch.cuda.is_available() else "cpu"
-        self.model_name = "/home/user1/QnA_rzd/NLP/llm_models/models--NousResearch--Llama-3.2-1B/snapshots/a9745ffc3556f145a830ac0c203509ba860582a3"
+        self.model_name = "/home/user1/QnA_Bot_RZD/NLP/llm_models/models--NousResearch--Llama-3.2-1B/snapshots/a9745ffc3556f145a830ac0c203509ba860582a3"
         self.model = AutoModel.from_pretrained(self.model_name, torch_dtype=torch.float16).to(self.device)
         self.tokenizer = AutoTokenizer.from_pretrained(self.model_name)
         self.tokenizer.add_special_tokens({'pad_token': '[PAD]'})

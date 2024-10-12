@@ -22,7 +22,7 @@ class Bot:
         self.pdf_path = pdf_path
 
 
-    def proceed(self, query:str, faiss_path:str="/home/user1/QnA_rzd/NLP/faiss_index.index", load_faiss: bool=True) -> str:
+    def proceed(self, query:str, faiss_path:str="/home/user1/QnA_bot_RZD/NLP/faiss_index.index", load_faiss: bool=True) -> str:
         """
         Метод для отправки вопроса чат-боту в консольной варианте
 
@@ -55,7 +55,7 @@ class Bot:
         return output + "\n Найдено в файлах:\n● " + '\n● '.join(filenames_results)
 
 
-# pdf_path = "/home/user1/QnA_rzd/Documents/base/" # Укажите путь к вашему PDF файлу
+# pdf_path = "/home/user1/QnA_bot_RZD/Documents/base/" # Укажите путь к вашему PDF файлу
 # bot = Bot(pdf_path)
 # query = "Сколько длится ежегодный основной отпуск?"
 # print("ОТВЕТ МОДЕЛИ:\n", bot.proceed(query, load_faiss=True))

@@ -4,7 +4,7 @@ from dataclasses import dataclass
 class LLM_Hyper_Conf:
 
     # Пример использования с гиперпараметрами
-    model_path:str = "/home/user1/QnA_rzd/NLP/llm_models/models--unsloth--Meta-Llama-3.1-8B-Instruct-bnb-4bit/snapshots/5b0dd3039c312969e7950951486714bff26f0822"#"Vikhrmodels/Vikhr-Llama-3.2-1B-Instruct"#'IlyaGusev/saiga_llama3_8b' # Путь до модели
+    model_path:str = "/home/user1/QnA_Bot_RZD/NLP/llm_models/models--unsloth--Meta-Llama-3.1-8B-Instruct-bnb-4bit/snapshots/5b0dd3039c312969e7950951486714bff26f0822"#"Vikhrmodels/Vikhr-Llama-3.2-1B-Instruct"#'IlyaGusev/saiga_llama3_8b' # Путь до модели
     max_length:int= 800                        # Максимальная длина генерируемого текста
     min_length:int= 30                        # Минимальная длина генерируемого текста
     num_return_sequences:int= 1              # Количество возвращаемых последовательностей
