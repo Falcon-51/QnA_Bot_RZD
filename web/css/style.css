@@ -1,0 +1,206 @@
+
+/* Основные стили для header */
+
+.custom-header {
+  background-color: white;
+  padding: 10px 0;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 40px auto;
+  max-width: 70%;
+  display: flex;
+  justify-content: center;
+}
+
+/* Контейнер для логотипа, навигации и действий */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Логотип */
+.logo img {
+  height: 40px;
+  margin-left: 30px;
+}
+
+/* Навигация */
+nav ul {
+  display: flex;
+  gap: 30px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  color: #4c4c4c;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #a075ff; 
+}
+
+/* Действия (кнопки справа) */
+.actions {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.actions a {
+  text-decoration: none;
+  color: #4c4c4c;
+  font-weight: bold;
+}
+
+.actions .signup {
+  background-color: #4c0d9a;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 30px;
+}
+
+.actions .signup:hover {
+  background-color: #a075ff;
+}
+body {
+  background: conic-gradient(rgb(212,196,220) , rgb(212,204,220) , rgb(216,196,220) )
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+    
+.modal--content {
+  background-color: white;
+  text-align:center;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid black;
+  width: 25%;
+  border-radius: 3%;
+}
+
+.actions .login {
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 30px;
+}
+
+.actions .login:hover {
+  background-color: #a075ff;
+}
+
+.custom-header {
+  margin-bottom: 20px;
+}
+
+#chat-box {
+  background-color: white;
+  height: 400px; /* Высота окна чата */
+  overflow-y: auto; /* Прокрутка */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  background-image: url("logo.jpg");
+  background-size: contain;
+  background-repeat: no-repeat; 
+  background-position: center;
+}
+
+/* Сообщение от пользователя */
+.text-end {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.text-end p {
+  background-color: #a075ff;
+  padding: 8px 12px;
+  border-radius: 15px;
+  max-width: 75%;
+  color: white;
+}
+
+/* Сообщение от сервера/системы */
+.text-start {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.text-start p {
+  background-color: #6b4fa8;
+  padding: 8px 12px;
+  border-radius: 15px;
+  max-width: 75%;
+  color: white;
+}
+
+.input-group {
+  margin-top: 10px;
+}
+
+p {
+  margin: 5px 0;
+}
+
+.scrollable-table {
+  max-height: 700px;
+  overflow-y: auto; 
+}
+.preview-container {
+  height: 700px; 
+  width: 650px;
+  overflow: hidden; 
+  background-color: white;
+  border-radius: 8px;
+}
+iframe {
+  width: 100%;
+  height: 100%;
+  border: none; 
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 600;
+  background-image: linear-gradient(45deg, #553c9a, #b393d3);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h5 {
+  text-align: justify;
+  width: 700px;
+  height: 400px;
+  padding: 20px; 
+  margin-left: 195px;
+  background-color: white;  
+  border: 1px solid #ccc; 
+  border-radius: 50px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container_text {
+  display: flex;
+}
